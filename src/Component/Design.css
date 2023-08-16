@@ -1,0 +1,544 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+.Links{
+    margin-top: 10px;
+    margin-bottom: 17px;
+    font-size: 18px;
+    font: normal normal medium 18px/22px Montserrat;
+    display: flex;
+    justify-content: space-evenly;
+    text-decoration: none;
+}
+
+.text{
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.HeadingPostpageHome{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-left: 10%;
+  }
+
+@media screen and (max-width:520px){
+    .HeadingMainSiren{
+        display: none;
+    }
+    .hamburger{
+        display: flex;
+        justify-content: end;
+        margin-right: 5%;
+        margin-top: 25px;
+    }
+    .home{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-left: 3%;
+    }
+    .Heading{
+        display: none;
+    }
+    .LinksDuo{
+        margin-top: 10px;
+        margin-bottom: 17px;
+        font-size: 18px;
+        font: normal normal medium 18px/22px Montserrat;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        height: 180px;
+        width: 100%;
+        text-decoration: none;
+    }
+    .headerPostpageHome{
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+}
+
+@media screen and (min-width:520px){
+    .home1 img{
+        width: 100%;
+        max-height: 606px;
+        border-radius: 12px;
+        margin-left: 1%;
+    }
+
+
+    .LinksDuo{
+     display: none;
+    }
+    .hamburger{
+        display: none;
+    }
+    .headerPostpageHome{
+        display: none;
+    }
+}
+.MenuUnderline{
+    color: rgb(216, 213, 213);
+    width: 93%;
+    border: 1px solid;
+    margin-bottom: 115px;
+}
+.home{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.home1{
+    position: relative;
+    width:958px ;
+    max-height: 606px; 
+    margin-right: 12.62px;  
+    margin-bottom: 10px;
+}
+.home1 img{
+    width: 100%;
+    max-height: 606px;
+    border-radius: 12px;
+}
+@media screen and (max-width:1300px){
+    .home2main{
+        display: flex;
+        flex-direction: row;
+    }
+    .home2{
+        max-width: 465px;
+        max-height: 295px;
+        margin-bottom: 12px;
+        margin-right: 9px;
+    }
+}
+@media screen and (max-width:950px){
+
+    .home2main{
+        display: flex;
+        flex-direction: column;
+    }
+    .home2{
+        max-width: 465px;
+        height: 300px;
+        margin-bottom: 22px;
+        margin-right: 9px;
+    }
+}
+@media screen and (max-width:450px){
+    .TheLatestFlex{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin-left: 6%;
+    
+    }
+    .insideHome1 p{
+        color: white;
+        font-family: 'Roboto', sans-serif;
+        font-size: 18px;
+        position: absolute;
+        transform: translate(-50%,-50%);
+        width: 280px;
+        bottom: 10px;
+        left: 95%;
+    }
+    .home2{
+        max-width: 465px;
+        height: 260px;
+        margin-bottom: 22px;
+        margin-right: 9px;
+    }
+    .insideHome2{
+        color: white;
+        overflow: auto;
+        font-family: 'Roboto', sans-serif;
+        font-size: 12px;
+        max-width: 280px;
+        position: relative;
+        top: -160px;
+        left: 70px;
+    }
+
+}
+@media screen and (max-width:380px){
+    .home2{
+        max-width: 465px;
+        height: 230px;
+        margin-bottom: 22px;
+        margin-right: 9px;
+    }
+
+}
+@media screen and (max-width:315px){
+    .home2{
+        max-width: 465px;
+        height: 180px;
+        margin-bottom: 22px;
+        margin-right: 9px;
+    }
+
+}
+.insideHome1{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.5em;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    max-width: 500px;
+    bottom: -30px;
+    left: 35%;
+}
+.home2{
+    max-width: 465px;
+    max-height: 295px;
+    margin-bottom: 12px;
+    box-sizing: border-box;
+}
+.home2 img{
+    width: 100%;
+    height: auto;
+    border-radius: 12px; 
+}
+.insideHome2{
+    color: white;
+    overflow: auto;
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+    max-width: 280px;
+    position: relative;
+    top: -160px;
+    left: 60px;
+}
+.TheLatestFlex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+}
+.sideoflatest{
+    margin-left: 5%;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+.TheLatest{
+    align-items: center;
+    max-width: 452px;
+    margin-right: 40px;
+}
+.TheLatest img{
+    border-radius: 12px;
+    display: block;
+    width: 100%;
+
+}
+.TheLatestHead{
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    max-width: 300px;
+    margin-bottom: 0;
+}
+.TheLatestDis{
+    font-family: 'Roboto', sans-serif;
+    max-width: 357px;
+    height: auto;
+    margin-top: 4px;
+    color: gray;
+}
+
+.LeftSide1{
+    display: flex;  
+    margin-bottom: 80px; 
+    max-width: 670px;
+}
+@media screen and (max-width:530px) {
+    .LeftSide1{
+        display: flex;  
+        flex-direction: column;
+        margin-left: 5%;
+        margin-bottom: 80px; 
+        max-width: 670px;
+    }
+}
+.LeftSide12{
+    width: 308px;
+    height: 263px;    
+}
+.LeftSide12 img{
+    width: 308px;
+    height: 263px; 
+}
+.FlexArticlesRight{
+    max-width: 452px;
+}
+.FlexArticles{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.TitleVerticle{
+    max-width: 944px;
+    margin-bottom: 20px;
+    margin-top: 260px;
+}
+.TitleVerticle img{
+    width: 100%;
+    border-radius: 12px;
+}
+
+.mainCompo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+.HeadingPostpage{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-left: 10%;
+  }
+  .HeadingPostpage1{
+    transform: rotate(-90deg);
+    font-size: 22px;
+  
+    font: normal normal medium 32px/39px Montserrat;
+  }
+  .HeadingPostpage2{
+    margin-left: -6px;
+    top: 31px;
+    left: 260px;
+    width: 118px;
+    height: 54px;
+    /* UI Properties */
+    text-align: left;
+    font: normal normal bold 44px/54px Montserrat;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1;
+  }
+.headerPostpage{
+    display: flex;
+    justify-content:space-between;
+    box-shadow: 0px 15px 20px  rgb(225, 225, 225);
+    padding-bottom: 15px;
+}
+.getStarted{
+    margin-right: 8%;
+    font: normal normal normal 18px/25px Open Sans;
+    letter-spacing: 0px;
+    color: #03A87C;
+    top: 36px;
+    left: 1671px;
+    width: 137px;
+    height: 45px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #03A87C;
+    margin-top: 22px;
+}
+.MainImg {
+    max-width: 677px;
+    margin-top: 30px;
+}
+.MainImg  img{
+    width: 100%;
+}
+.CardHeading{
+    font-size: 10px;
+    text-align: left;
+    font: normal normal normal 42px Georgia;
+    margin: 5px 0;
+    margin-bottom: 20px;
+}
+.FixTheBox{
+    max-width: 677px;
+    margin: 0 auto;
+}
+.logoBox{
+    display: flex;
+    justify-content: space-between;
+}
+.personInfo{
+    display: flex;
+}
+.personInfo  p{
+    margin: 7px 0;
+    font: normal normal normal 14px Open Sans;
+}
+.personInfo h3{
+    margin: 33px 0 5px 0;
+    font: normal normal normal 18px Open Sans;
+}
+.personInfo1{
+    max-width: 103px;
+    height: 103px;
+}
+.personInfo1 img{
+    width: 100%;
+}
+.persInfo{
+    margin-left: 15px;
+}
+.LogosOfShare{
+    margin-top: 35px;
+}
+.LogosOfShare img{
+    width: 26px;
+    height: 26px;
+}
+.imgFace{
+    background-color: rgb(180, 179, 179);
+    border-radius: 5px;
+}
+.imgYou{
+    background-color: rgb(180, 179, 179);
+    border-radius: 5px;
+}
+.discription{
+    font: normal normal normal 21px/32px Georgia;
+}
+.likeLogo{
+    display: flex;
+}
+@media screen and (max-width:1000px){
+    .logosOfLikes{
+        display: none;
+    }
+}
+.likeLogo img{
+    width: 35px;
+    height: 35px;    
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+.likeLogo p{
+    margin-top: 5px;
+    margin-left: 10px;
+    color: gray;
+    font: normal normal normal 16px/25px Open Sans;
+}
+.logosOfLikes{
+    position: absolute;
+    top: 650px;  
+    transform: translateX(5%);
+}
+.LeftSide{
+    display: flex;  
+    margin-bottom: 80px; 
+    max-width: 670px;
+}
+@media screen and (max-width:495px) {
+    .LeftSide{
+        display: flex;  
+        flex-direction: column;
+        margin-bottom: 80px; 
+        max-width: 670px;
+    }
+    .LeftSideSide{
+        margin-left: 0px;
+    }
+    
+}
+.LeftSide img{
+    max-width: 308px;
+    height: 184px;    
+}
+.LeftSide h4{
+    margin-top: 2px;
+    margin-bottom: 5px;
+    font: normal normal medium 26px/35px Montserrat;    
+}
+
+.LeftSideSide{
+    margin-left: 20px;
+}
+
+.LeftSideSide p{
+    font: normal normal normal 17px/23px Open Sans;    
+    color: gray;
+}
+.LeftSideSideLink{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+.RightSide{
+    max-width: 452px;
+}
+.RightSideImg{
+    max-width: 452px;
+}
+.RightSideImg img{
+    width: 100%;
+}
+.RightSideSide p{
+    font: normal normal normal 17px/23px Open Sans;    
+    color: gray;
+}
+.TopImgCard{
+    display: flex;
+    margin-bottom: 60px;
+}
+.TopImgCardimg{
+    width: 101px;
+    height: 104px;    
+}
+.TopImgCard p{
+    font: normal normal normal 17px/23px Open Sans;    
+    color: gray;
+    margin-bottom: 0;
+}
+
+  @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+.AllTitle{
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 35px;
+    font-family: 'Roboto', sans-serif;
+}
+.underBoly{
+    width: 80px;
+    margin-left: 5px;
+    border: 2px solid rgb(253, 94, 94);
+    border-radius: 25px;
+    margin-bottom: 30px;
+}
+.Advertise{
+    max-width: 452px;
+    height: 819px;    
+    margin: 0 auto;
+}
+.Advertise img{
+    width: 100%;
+}
+.PerInfo{
+    padding-top: 20px;
+    max-width: 75px;
+    height: 75px;
+}
+.PerInfo img{
+    width: 100%;
+}
+.Heading{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  .Heading1{
+    transform: rotate(-90deg);
+    font-size: 29px;
+  
+    font: normal normal medium 32px/39px Montserrat;
+  }
+  .Heading2{
+    padding-bottom: 5px;
+    margin-left: -18px;
+    font: normal normal bold 71px/87px Montserrat;
+  }
