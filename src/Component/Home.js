@@ -1,9 +1,7 @@
 import React, { useContext } from "react";
-import img from "./Images/GS.jpg";
-import imgg from "./Images/NR.jpg";
 import imggg from "./Images/GB.jpg";
 import { context } from "./RouterCompo";
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import Add from './Images/TomatoAdd.jpg'
 import boly from './Images/bolly.jpg'
 import "./Design.css";

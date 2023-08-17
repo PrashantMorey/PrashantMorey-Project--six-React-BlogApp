@@ -1,23 +1,28 @@
 import React, { useState } from 'react'
-import { Link, useLocation } from 'react-router-dom'
+import { Link,  useLocation,  useNavigate } from 'react-router-dom'
 import './Design.css';
 import Hamburger from 'hamburger-react';
 
 function MenuLinks() {
 
-    const location = useLocation();
+  const location = useLocation();
+    const nav = useNavigate();
     const [isOpen,setOpen] = useState(false);
+
+    function handleLocation (){
+      nav('/')
+    }
 
 
   return (
-    <>
+    <div className='sticky'>
          
     {location.pathname == `/postpage` ? null: 
     (
         
       <div>
-        <div className='HeadingMainSiren'>
-          <div className=' Heading'>
+        <div className='HeadingMainSiren '>
+          <div className=' Heading'  onClick={handleLocation}>
             <div className='Heading1'>The</div>
             <div className='Heading2'>Siren</div>
           </div>
@@ -32,8 +37,8 @@ function MenuLinks() {
           </div>
         </div>
 
-        <div className="headerPostpageHome">
-          <div className="HeadingPostpageHome">
+        <div className="headerPostpageHome ">
+          <div className="HeadingPostpageHome"   onClick={handleLocation}>
             <div className="HeadingPostpage1">The</div>
             <div className="HeadingPostpage2">Siren</div>
           </div>
@@ -58,7 +63,7 @@ function MenuLinks() {
       </div>
 )}
 
-    </>
+    </div>
   )
 }
 

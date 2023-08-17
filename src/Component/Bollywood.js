@@ -53,8 +53,8 @@ function Bollywood() {
         .map((value,index)=>{
           return(
             <div className='TopImgCard'>
-                <div>  
-                   <img  className='TopImgCardimg' src={value.urlImg} alt='Celebraty Img'/>  
+                <div className='TopImgCardimg'>  
+                   <img src={value.urlImg} alt='Celebraty Img'/>  
                 </div>
                 <div style={{display:'flex', flexDirection:'column',justifyContent: 'space-between'}}>
                 <h4 style={{margin:0 }}><Link className='LeftSideSideLink' state={{data : value.id}} to='/postpage' >{value.title}</Link></h4>

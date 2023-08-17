@@ -22,14 +22,14 @@ function Postpage() {
     const Filter = PageData.filter((item)=>item.id===IndexValue)
   return (
     <div>
-      <div className="headerPostpage">
+      <div className="headerPostpage sticky">
         <div className="HeadingPostpage">
           <div className="HeadingPostpage1">The</div>
           <div className="HeadingPostpage2">Siren</div>
         </div>
         <button className="getStarted">Get Started</button>
       </div>
-
+      <div className='marginPost'>
       <div className="logosOfLikes">
         <div className="likeLogo">
           <img src={clap} alt="Clap img" />
@@ -128,6 +128,7 @@ function Postpage() {
             }
           )}
         </div>
+      </div>
       </div>
     </div>
   );

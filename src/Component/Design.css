@@ -81,6 +81,12 @@
     .headerPostpageHome{
         display: none;
     }
+    .sticky{
+        position: sticky;
+        top: 0px;
+        background-color: white;
+        z-index: 2;
+      }
 }
 .MenuUnderline{
     color: rgb(216, 213, 213);
@@ -116,6 +122,12 @@
         margin-bottom: 12px;
         margin-right: 9px;
     }
+    .sticky{
+        position: sticky;
+        top: 0px;
+        background-color: white;
+        z-index: 2;
+      }
 }
 @media screen and (max-width:950px){
 
@@ -129,6 +141,12 @@
         margin-bottom: 22px;
         margin-right: 9px;
     }
+    .sticky{
+        position: sticky;
+        top: 0px;
+        background-color: white;
+        z-index: 2;
+      }
 }
 @media screen and (max-width:450px){
     .TheLatestFlex{
@@ -164,6 +182,12 @@
         top: -160px;
         left: 70px;
     }
+    .sticky{
+        position: sticky;
+        top: 0px;
+        background-color: white;
+        z-index: 2;
+      }
 
 }
 @media screen and (max-width:380px){
@@ -173,6 +197,12 @@
         margin-bottom: 22px;
         margin-right: 9px;
     }
+    .sticky{
+        position: sticky;
+        top: 0px;
+        background-color: white;
+        z-index: 2;
+      }
 
 }
 @media screen and (max-width:315px){
@@ -182,6 +212,12 @@
         margin-bottom: 22px;
         margin-right: 9px;
     }
+    .sticky{
+        position: sticky;
+        top: 0px;
+        background-color: white;
+        z-index: 2;
+      }
 
 }
 .insideHome1{
@@ -232,6 +268,7 @@
     margin-right: 40px;
 }
 .TheLatest img{
+    margin-left: 0%;
     border-radius: 12px;
     display: block;
     width: 100%;
@@ -264,6 +301,12 @@
         margin-bottom: 80px; 
         max-width: 670px;
     }
+    .sticky{
+        position: sticky;
+        top: 0px;
+        background-color: white;
+        z-index: 2;
+      }
 }
 .LeftSide12{
     width: 308px;
@@ -285,6 +328,8 @@
     max-width: 944px;
     margin-bottom: 20px;
     margin-top: 260px;
+    margin-left: 4%;
+    margin-right: 4%;
 }
 .TitleVerticle img{
     width: 100%;
@@ -410,6 +455,12 @@
     .logosOfLikes{
         display: none;
     }
+    .sticky{
+        position: sticky;
+        top: 0px;
+        background-color: white;
+        z-index: 2;
+      }
 }
 .likeLogo img{
     width: 35px;
@@ -432,6 +483,7 @@
     display: flex;  
     margin-bottom: 80px; 
     max-width: 670px;
+    justify-content: center;
 }
 @media screen and (max-width:495px) {
     .LeftSide{
@@ -439,9 +491,39 @@
         flex-direction: column;
         margin-bottom: 80px; 
         max-width: 670px;
+        justify-content: center;
     }
     .LeftSideSide{
         margin-left: 0px;
+    }
+    .LeftSide img{
+        width: 100%;
+        height: 184px;  
+        margin-left: 5%;  
+        justify-content: center;
+    }
+    .sticky{
+        position: sticky;
+        top: 0px;
+        background-color: white;
+        z-index: 2;
+      }
+      .TopImgCard{
+        display: flex;
+        margin-bottom: 60px;
+        margin: 0 4%;
+    }
+    .TitleVerticle {
+        max-width: 944px;
+        margin-bottom: 20px;
+        margin-top: 60px;
+        margin-left: 4%;
+        margin-right: 4%;
+    }
+    .Advertise{
+        max-width: 452px;
+        max-height: 819px;    
+        margin: 10px 4%;
     }
     
 }
@@ -473,9 +555,14 @@
 }
 .RightSideImg{
     max-width: 452px;
+    margin: 0 4%;
 }
 .RightSideImg img{
     width: 100%;
+
+}
+.RightSideSide{
+    margin: 0 4%;
 }
 .RightSideSide p{
     font: normal normal normal 17px/23px Open Sans;    
@@ -484,10 +571,14 @@
 .TopImgCard{
     display: flex;
     margin-bottom: 60px;
+    margin-left: 4%;
 }
 .TopImgCardimg{
-    width: 101px;
+    max-width: 101px;
     height: 104px;    
+}
+.TopImgCardimg img{
+    width: 100%;
 }
 .TopImgCard p{
     font: normal normal normal 17px/23px Open Sans;    
@@ -498,8 +589,9 @@
   @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 .AllTitle{
-    margin-top: 0;
+    margin-top: 25px;
     margin-bottom: 0;
+    margin-left: 4%;
     font-size: 35px;
     font-family: 'Roboto', sans-serif;
 }
@@ -512,8 +604,9 @@
 }
 .Advertise{
     max-width: 452px;
-    height: 819px;    
+    max-height: 819px;    
     margin: 0 auto;
+    margin: 0 4%;
 }
 .Advertise img{
     width: 100%;
@@ -541,4 +634,15 @@
     padding-bottom: 5px;
     margin-left: -18px;
     font: normal normal bold 71px/87px Montserrat;
+  }
+
+
+  .sticky{
+    position: sticky;
+    top: 0px;
+    background-color: white;
+    z-index: 2;
+  }
+  .marginPost{
+    margin: 0 4%;
   }
