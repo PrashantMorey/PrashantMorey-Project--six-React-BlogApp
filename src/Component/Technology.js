@@ -32,7 +32,7 @@ function Technology() {
 
         <div className='RightSide'>
           <h2 className='AllTitle'>Top Post</h2><hr className='underBoly'/>
-        {Filter.filter((item)=>item.id==19)
+        {Filter.filter((item)=>item.id===19)
         .map((value,index)=>{
           return(
             <div>

@@ -33,7 +33,7 @@ function Hollywood() {
 
         <div className='RightSide'>
           <h2 className='AllTitle'>Top Post</h2><hr className='underBoly'/>
-        {Filter.filter((item)=>item.id==30)
+        {Filter.filter((item)=>item.id===30)
         .map((value,index)=>{
           return(
             <div>

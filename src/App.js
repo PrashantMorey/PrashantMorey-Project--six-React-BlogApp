@@ -1,4 +1,5 @@
 import './App.css';
+import Footer from './Component/Footer';
 import RouterCompo from './Component/RouterCompo';
 function App() {
 
@@ -8,6 +9,7 @@ function App() {
     <div className="App">
 
       <RouterCompo/>
+      <Footer/>
     </div>
     </>
   );

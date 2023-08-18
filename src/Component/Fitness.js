@@ -33,7 +33,7 @@ function Fitness() {
 
         <div className='RightSide'>
           <h2 className='AllTitle'>Top Post</h2><hr className='underBoly'/>
-        {Filter.filter((item)=>item.id==41)
+        {Filter.filter((item)=>item.id===41)
         .map((value,index)=>{
           return(
             <div>

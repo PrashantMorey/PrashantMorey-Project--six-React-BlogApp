@@ -17,7 +17,7 @@ function MenuLinks() {
   return (
     <div className='sticky'>
          
-    {location.pathname == `/postpage` ? null: 
+    {location.pathname === `/postpage` ? null: 
     (
         
       <div>
