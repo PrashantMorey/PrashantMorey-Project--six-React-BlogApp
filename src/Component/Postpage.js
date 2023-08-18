@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
 import { context } from './RouterCompo'
-import { useLocation } from 'react-router-dom'
+import { useLocation, useNavigate } from 'react-router-dom'
 import { Link } from 'react-router-dom';
 import clap from './Images/Clap.png'
 import share from './Images/share.png'
@@ -14,6 +14,10 @@ import './Design.css';
 
 
 function Postpage() {
+  const nav = useNavigate();
+  function handleLocation (){
+    nav('/')
+  }
     const [PageData] = useContext(context)
     const ind = useLocation()
     console.log(ind);
@@ -23,7 +27,7 @@ function Postpage() {
   return (
     <div>
       <div className="headerPostpage sticky">
-        <div className="HeadingPostpage">
+        <div className="HeadingPostpage"  onClick={handleLocation}>
           <div className="HeadingPostpage1">The</div>
           <div className="HeadingPostpage2">Siren</div>
         </div>
