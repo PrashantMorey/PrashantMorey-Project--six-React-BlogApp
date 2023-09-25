@@ -34,10 +34,8 @@
         margin-top: 25px;
     }
     .home{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        margin-left: 3%;
+        margin: 0 7px;
+        
     }
     .Heading{
         display: none;
@@ -64,14 +62,6 @@
 }
 
 @media screen and (min-width:520px){
-    .home1 img{
-        width: 100%;
-        max-height: 606px;
-        border-radius: 12px;
-        margin-left: 1%;
-    }
-
-
     .LinksDuo{
      display: none;
     }
@@ -92,7 +82,7 @@
     color: rgb(216, 213, 213);
     width: 93%;
     border: 1px solid;
-    margin-bottom: 115px;
+    margin-bottom: 55px;
 }
 .home{
     display: flex;
@@ -101,26 +91,39 @@
 }
 .home1{
     position: relative;
-    width:958px ;
+    max-width:805px ;
     max-height: 606px; 
-    margin-right: 12.62px;  
     margin-bottom: 10px;
+    margin-right: 5px;
 }
+
+.home2{
+    max-width: 378px;
+    position: relative;
+    margin-bottom: 12px;
+    margin-left: 5px;
+    box-sizing: border-box;
+}
+
 .home1 img{
     width: 100%;
     max-height: 606px;
     border-radius: 12px;
 }
-@media screen and (max-width:1300px){
+
+.home2 img{
+    width: 100%;
+    height: auto;
+    border-radius: 12px; 
+}
+@media screen and (max-width:1320px){
     .home2main{
         display: flex;
         flex-direction: row;
     }
     .home2{
-        max-width: 465px;
-        max-height: 295px;
+        position: relative;
         margin-bottom: 12px;
-        margin-right: 9px;
     }
     .sticky{
         position: sticky;
@@ -132,15 +135,25 @@
 @media screen and (max-width:950px){
 
     .home2main{
-        display: flex;
-        flex-direction: column;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .home1{
+        position: relative;
+        max-width:805px ;
+        max-height: 606px; 
+        margin-bottom: 10px;
     }
     .home2{
+        position: relative;
+        margin-bottom: 22px;
+    }
+    /* .home2 img{
         max-width: 465px;
-        height: 300px;
+        max-height: 300px;
         margin-bottom: 22px;
         margin-right: 9px;
-    }
+    } */
     .sticky{
         position: sticky;
         top: 0px;
@@ -148,38 +161,58 @@
         z-index: 2;
       }
 }
+@media screen and (max-width:720px){
+    .home{
+        margin: 0 25px;
+        
+    }
+    .home2main{
+        display: flex;
+        flex-direction: column;
+        max-width: fit-content;
+    }
+    .home2{
+        position: relative;
+        margin-bottom: 12px;
+        max-width: fit-content;
+    }
+}
+
 @media screen and (max-width:450px){
+    .TopImgCardimg{
+        max-width: 501px;
+        height: 104px;    
+    }
+    .home2main{
+        display: flex;
+        flex-direction: column;
+        max-width: fit-content;
+    }
+    .home2{
+        position: relative;
+        margin-bottom: 12px;
+    }
     .TheLatestFlex{
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
-        margin-left: 6%;
     
     }
     .insideHome1 p{
         color: white;
         font-family: 'Roboto', sans-serif;
         font-size: 18px;
-        position: absolute;
-        transform: translate(-50%,-50%);
         width: 280px;
-        bottom: 10px;
-        left: 95%;
     }
-    .home2{
-        max-width: 465px;
-        height: 260px;
-        margin-bottom: 22px;
-        margin-right: 9px;
-    }
+
     .insideHome2{
         color: white;
         overflow: auto;
         font-family: 'Roboto', sans-serif;
         font-size: 12px;
         max-width: 280px;
-        position: relative;
-        top: -160px;
+        position: absolute;
+        top: 140px;
         left: 70px;
     }
     .sticky{
@@ -190,12 +223,27 @@
       }
 
 }
+@media screen and (max-width:315px){
+    .home2{
+        position: relative;
+        margin-bottom: 12px;
+    }
+
+}
 @media screen and (max-width:380px){
+    .home2main{
+        display: flex;
+        flex-direction: column;
+        max-width: fit-content;
+    }
+    .home2{
+        position: relative;
+        margin-bottom: 12px;
+    }
     .home2{
         max-width: 465px;
-        height: 230px;
+        position: relative;
         margin-bottom: 22px;
-        margin-right: 9px;
     }
     .sticky{
         position: sticky;
@@ -208,9 +256,8 @@
 @media screen and (max-width:315px){
     .home2{
         max-width: 465px;
-        height: 180px;
+        position: relative;
         margin-bottom: 22px;
-        margin-right: 9px;
     }
     .sticky{
         position: sticky;
@@ -225,30 +272,20 @@
     font-family: 'Roboto', sans-serif;
     font-size: 2.5em;
     position: absolute;
-    transform: translate(-50%,-50%);
     max-width: 500px;
-    bottom: -30px;
-    left: 35%;
+    bottom: 30px;
+    left: 20px;
 }
-.home2{
-    max-width: 465px;
-    max-height: 295px;
-    margin-bottom: 12px;
-    box-sizing: border-box;
-}
-.home2 img{
-    width: 100%;
-    height: auto;
-    border-radius: 12px; 
-}
+
+
 .insideHome2{
     color: white;
     overflow: auto;
     font-family: 'Roboto', sans-serif;
     font-size: 22px;
     max-width: 280px;
-    position: relative;
-    top: -160px;
+    position: absolute;
+    top: 140px;
     left: 60px;
 }
 .TheLatestFlex{
@@ -264,8 +301,9 @@
 }
 .TheLatest{
     align-items: center;
-    max-width: 452px;
-    margin-right: 40px;
+    max-width: 392px;
+    margin-right: 20px;
+    margin-left: 20px;
 }
 .TheLatest img{
     margin-left: 0%;
@@ -294,6 +332,7 @@
     max-width: 670px;
 }
 @media screen and (max-width:530px) {
+
     .LeftSide1{
         display: flex;  
         flex-direction: column;
@@ -309,11 +348,11 @@
       }
 }
 .LeftSide12{
-    width: 308px;
+    max-width: 308px;
     height: 263px;    
 }
 .LeftSide12 img{
-    width: 308px;
+    width: 100%;
     height: 263px; 
 }
 .FlexArticlesRight{
@@ -327,7 +366,7 @@
 .TitleVerticle{
     max-width: 944px;
     margin-bottom: 20px;
-    margin-top: 260px;
+    margin-top: 100px;
     margin-left: 4%;
     margin-right: 4%;
 }
@@ -499,7 +538,8 @@
     .LeftSide img{
         width: 100%;
         height: 184px;  
-        margin-left: 5%;  
+        margin-left: 2%;  
+        margin-right: 2%;
         justify-content: center;
     }
     .sticky{
@@ -510,6 +550,7 @@
       }
       .TopImgCard{
         display: flex;
+        flex-direction: column;
         margin-bottom: 60px;
         margin: 0 4%;
     }
@@ -582,6 +623,7 @@
 .TopImgCardimg{
     max-width: 101px;
     height: 104px;    
+    margin-right: 18px;
 }
 .TopImgCardimg img{
     width: 100%;
@@ -595,7 +637,7 @@
   @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 .AllTitle{
-    margin-top: 25px;
+    margin-top: 55px;
     margin-bottom: 0;
     margin-left: 0%;
     font-size: 35px;
@@ -660,6 +702,7 @@
     flex-wrap: wrap;
     color: rgb(172, 172, 172);
     justify-content:space-evenly;
+    margin-top: 80px;
   }
 
   .footerInside{

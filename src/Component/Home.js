@@ -46,7 +46,7 @@ function Home() {
                     return (
                       <>
                         <div className="home2">
-                          <img src={value.urlImg} alt="Home Img" />
+                          <img className="home2img" src={value.urlImg} alt="Home Img" />
                           <div className="insideHome2">
                             <p style={{ marginBottom: 2 }}>
                               <Link          style={{color:'white'}}          
@@ -61,28 +61,6 @@ function Home() {
                       </>
                     );
                   })}
-
-
-                {FilterLatest.filter((item) => item.id === 72).map(
-                (value, index) => {
-                  return (
-                    <>
-                      <div className="home2 changeSide">
-                        <img src={imggg} alt="Home Img" />
-                        <div className="insideHome2">
-                          <p style={{ marginBottom: 2 }}>
-                          <Link   style={{color:'white'}}                
-                              state={{ data: value.id }}
-                              to="/postpage" >
-                              {value.title}
-                          </Link>
-                          </p>
-                          <span style={{ fontSize: 10 }}>Travel / Aug 27 2023</span>
-                        </div>
-                      </div>
-                      </>
-                  );
-                })}
         </div>
 
       </div>
@@ -245,9 +223,8 @@ function Home() {
             (value, index) => {
               return (
                 <div className="TopImgCard">
-                  <div>
+                  <div className="TopImgCardimg">
                     <img
-                      className="TopImgCardimg"
                       src={value.urlImg}
                       alt="Celebraty Img"
                     />
@@ -285,7 +262,7 @@ function Home() {
         <hr className="underBoly" />
       </div>
       <div className="TheLatestFlex">
-        {FilterLatest.filter((item) => item.catu === "TheLatest").map(
+        {FilterLatest.filter((item) => item.catu === "TheLatestStory").map(
           (value, index) => {
             return (
               <>

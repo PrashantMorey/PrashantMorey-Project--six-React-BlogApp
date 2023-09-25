@@ -20,8 +20,9 @@ function Postpage() {
   }
     const [PageData] = useContext(context)
     const ind = useLocation()
-    console.log(ind);
+    console.log(PageData);
     const IndexValue = useLocation().state.data
+    console.log(IndexValue);
     // const MoreData = PageData
     const Filter = PageData.filter((item)=>item.id===IndexValue)
   return (
