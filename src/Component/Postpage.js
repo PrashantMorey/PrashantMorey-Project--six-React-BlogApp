@@ -23,6 +23,7 @@ function Postpage() {
     console.log(PageData);
     const IndexValue = useLocation().state.data
     console.log(IndexValue);
+    const category = PageData[IndexValue].cat
     // const MoreData = PageData
     const Filter = PageData.filter((item)=>item.id===IndexValue)
   return (
@@ -99,7 +100,7 @@ function Postpage() {
       <div>
         <p style={{fontWeight:'bolder'}}>More From The Siren</p>
         <div className="TheLatestFlex" style={{marginTop:30}}>
-          {PageData.filter((item) => item.catu === "TopSiren").map(
+          {PageData.filter((item) => item.cat === category).slice(0,3).map(
             (value, index) => {
               return (
                 <>
